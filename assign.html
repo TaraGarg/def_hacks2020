@@ -15,10 +15,13 @@ body {
   background:black;
 
 }
-h3{
+h3 {
   color:white;
 }
 
+label{
+  color:white;
+}
 /* Include the padding and border in an element's total width and height */
 * {
   box-sizing: border-box;
@@ -107,7 +110,7 @@ ul li.checked::before {
 }
 
 /* Style the input */
-input {
+#myInput {
   margin: 0;
   border: none;
   border-radius: 0;
@@ -210,12 +213,17 @@ input {
 <br>
 <br>
 <h3>Are you free during the following time</h3>
-<button id="btn1" type="button" name="button" onclick="returnboolean1()">Morning</button>
-<button id="btn2" type="button" name="button" onclick="returnboolean2()">Afternoon</button>
-<button id="btn3" type="button" name="button" onclick="returnboolean3()">Evening</button>
-<button id="btn4" type="button" name="button" onclick="returnboolean4()">Midnight</button>
+<input id="btn1" type="checkbox" name="button" onclick="returnboolean1()">
+<label for="btn1"> Morning</label><br>
+<input id="btn2" type="checkbox" name="button" onclick="returnboolean2()">
+<label for="btn2"> Afternoon</label><br>
+<input id="btn3" type="checkbox" name="button" onclick="returnboolean3()">
+<label for="btn3"> Evening</label><br>
+<input id="btn4" type="checkbox" name="button" onclick="returnboolean4()">
+<label for="btn4"> Midnight</label><br>
 <br><br><br><br>
-<button type="button" name="button">New Member</button>
+<button type="submit" name="button">New Member</button>
+
 <script>
 
    function returnboolean1(){
