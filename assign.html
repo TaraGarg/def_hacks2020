@@ -197,6 +197,7 @@ ul li.checked::before {
   <span onclick="newElement()" class="addBtn">Add</span>
 </div>
 
+//this is the list item
 <ul id="myUL">
   <!-- <li class="any">Hit the gym</li>
   <li class="any">Pay bills</li>
@@ -207,12 +208,12 @@ ul li.checked::before {
 </ul>
 <br>
 <br>
-<h3>Enter the name of the family member</h3>
-<input type="text" name="" value="Enter your name here">
+<!-- <h3>Enter the name of the family member</h3>
+<input type="text" name="" placeholder="Enter your name here">
 <br>
+<br> -->
 <br>
-<br>
-<h3>Are you free during the following time</h3>
+<!-- <h3>Are you free during the following time</h3>
 <input id="btn1" type="checkbox" name="button" onclick="returnboolean1()">
 <label for="btn1"> Morning</label><br>
 <input id="btn2" type="checkbox" name="button" onclick="returnboolean2()">
@@ -222,9 +223,9 @@ ul li.checked::before {
 <input id="btn4" type="checkbox" name="button" onclick="returnboolean4()">
 <label for="btn4"> Midnight</label><br>
 <br><br><br><br>
-<button type="submit" name="button">New Member</button>
+<button type="submit" name="button">Submit</button>
 
-<script>
+
 
    function returnboolean1(){
      var bool= document.querySelector("#btn1")
@@ -251,16 +252,20 @@ ul li.checked::before {
      })
    }
 
-   // var member=[];
-   // var time=[];
-   // var e="y";
-   // var l=0;
-   // while (e==="y") {
-   //   member[l]= prompt("enter the name of the family member")
-   //   time[l]= prompt("enter the time the member is free(morning/afternoon/evening)")
-   //   e = prompt("do you want to add another member y/n")
-   //   l++;
-   // }
+   function all(){
+     var finalbool= returnboolean1() + returnboolean2()  + returnboolean3(),returnboolean4();
+   } -->
+<script>
+   var member=[];
+   var time=[];
+   var e="y";
+   var l=0;
+   while (e==="y") {
+     member[l]= prompt("enter the name of the family member")
+     time[l]= prompt("enter the time the member is free(morning/afternoon/evening/midnight) ture or false with commas")
+     e = prompt("do you want to add another member y/n")
+     l++;
+   }
 
 
 
@@ -295,6 +300,7 @@ list.addEventListener('click', function(ev) {
 
 q=0;
 var tfree=[];
+var chores=[];
 // Create a new list item when clicking on the "Add" button
 function newElement() {
   var li = document.createElement("li");
@@ -321,7 +327,8 @@ function newElement() {
       div.style.display = "none";
     }
   }
-  tfree[q] =prompt("at what time should the task be completed");
+  chores[q]= prompt("what did you enter as a chore?");   //or you can directly call li
+  tfree[q] =prompt("enter one time at which the task be completed(morning/afternoon/evening/midnight)");
   q++;
 }
 
