@@ -10,23 +10,30 @@
   </head>
   <style media="screen">
     body{
-      background:black;
+
       color: white;
     }
     a:hover{
       color:red;
     }
+    #myVideo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
   </style>
-  <body>
+   <body>
 
 
 
-        <nav class="navbar navbar-dark bg-transparent navbar-expand-lg navbar-light bg-light  sticky-top  ">
+      <nav class="navbar navbar-dark bg-transparent navbar-expand-lg navbar-light bg-light  sticky-top  ">
 
        <a class="navbar-brand" href="#">
 
        </a>
-          <a class="navbar-brand" href="/Users/aaditya/Desktop/def_hacks/homapage.html">FCHORES</a>
+          <a class="navbar-brand" href="homapage.html">FCHORES</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -34,15 +41,15 @@
           <div class="collapse navbar-collapse  " id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="/Users/aaditya/Desktop/def_hacks/homapage.html">Home </a>
+                <a class="nav-link" href="homapage.html">Home </a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="/Users/aaditya/Desktop/def_hacks/assign.html">Assign</a>
+                <a class="nav-link" href="assign.html">Assign</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="/Users/aaditya/Desktop/def_hacks/games.html">Fun Zone</a>
+                <a class="nav-link" href="games.html">Fun Zone</a>
               </li>
-            
+
           </div>
 
         </nav>
@@ -52,16 +59,21 @@
 
     <h1>CHOOSE WHICH GAME YOU WOULD LIKE TO PLAY</h1>
     <br><br><br><br><br>
-    <div class="jumbotron">
-    <ul>
-      <li><a href="/Users/aaditya/Desktop/def_hacks/accelerate.html">ACCELERATE</a></li>
-        <li><a href="/Users/aaditya/Desktop/def_hacks/connectfour.html">CONNECT FOUR</a></li>
-        <li><a href="/Users/aaditya/Desktop/def_hacks/tictactoe.html">TIC TAC TOE</a></li>
-          <li><a href="/Users/aaditya/Desktop/def_hacks/snakes.html">SNAKES</a></li>
-            <li><a href="/Users/aaditya/Desktop/def_hacks/hangman.html">HANGMAN</a></li>
-            <li><a href="/Users/aaditya/Desktop/def_hacks/hangman.html">2048</a></li>
 
-    </ul>
+    <div class="list-group">
+
+  <a href="accelerate.html" class="list-group-item list-group-item-action">ACCELERATE</a>
+  <a href="connectfour.html" class="list-group-item list-group-item-action">CONNECT FOUR</a>
+  <a href="tictactoe.html" class="list-group-item list-group-item-action">TIC TAC TOE</a>
+  <a href="hangman.html" class="list-group-item list-group-item-action">HANGMAN</a>
+  <a href="twozero.html" class="list-group-item list-group-item-action">2048</a>
+  <a href="snakes.html" class="list-group-item list-group-item-action">SNAKES</a>
+</div>
+
+  <video autoplay muted loop id="myVideo">
+    <source src="UserCreatorPageWallpaperVinyl.mp4" type="video/mp4">
+
+   </video>
     <script>
 
     </script>
