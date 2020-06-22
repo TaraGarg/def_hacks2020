@@ -1,0 +1,96 @@
+.logo{
+  border-radius: 100%;
+  width: 250px;
+  height: 250px;
+  display: block;
+
+}
+body{
+  background-color: black;
+  color: white;
+}
+#heading{
+  font-size: 125px;
+  padding-left: 25px;
+}
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+.contentHomePage{
+  margin-left: 100px;
+}
+p{
+  font-family: monospace;
+  font-size: 25px;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  /* opacity: 0.65; */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSVB7TqL6yH1MxR8enEJlKm67dDbB5iY9Lqm0cTlHqBwCowidjR&usqp=CAU");
+  min-height: 400px;
+}
+
+.bgimg-2 {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT2QkGzoT1q2MGr5fC37Vwwaqw1z9y5O9iMeGuwwvw8CFLCn6ja&usqp=CAU");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQzBMnunRwKQ5BKwjtaqlNi1-1AKOWJzTdEtWzY5OKsZKx3_fAI&usqp=CAU");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  border-width: thick;
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+
+}
+
+.welcometo{
+  color:white;
+  padding-left: 25px;
+}
+
+/* h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+} */
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+
+#bck{
+  z-index: -1;
+  height: 100px;
+}
