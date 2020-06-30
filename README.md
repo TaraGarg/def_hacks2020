@@ -1,1 +1,1 @@
-This was a website created for the 2020 Def Hacks hackathon. Check it out at  https://aadityayadav.github.io/def_hacks2020/
+This was a website created for the 2020 Def Hacks hackathon. It uses javascript to randomly assign tasks to users depending on their availability and tasks already given. Check it out at  https://aadityayadav.github.io/def_hacks2020/
